@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Main from "../partials/nav/main";
+import Main from "../partials/main";
 
 const Dashboard = () => {
   return (
     <>
-      <Main>
+      <Main className="dashboard">
         <Outlet />
       </Main>
     </>

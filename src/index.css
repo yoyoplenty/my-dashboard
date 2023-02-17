@@ -42,10 +42,6 @@ body {
   height: 3rem;
 }
 
-.transit {
-  transition: 1.5s;
-}
-
 .screen-height {
   min-height: 75vh;
 }
@@ -53,18 +49,4 @@ body {
 /** PAGES **/
 .pages {
   padding-top: 2.25rem;
-}
-
-/**
- *This is for Header and Sidebar
- */
-@media screen and (min-width: 768px) {
-  body {
-    /**
-    * This is to make the fixed elements, i.e the header and sidebar 
-    * position better after making them fixed
-    */
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
-  }
 }

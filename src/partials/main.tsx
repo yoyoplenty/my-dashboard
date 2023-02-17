@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "./header/header";
-import Sidebar from "./sidebar/sidebar";
-import "../nav/header/header.modules.css";
+import Header from "./nav/header/header";
+import Sidebar from "./nav/sidebar/sidebar";
+import "./nav/header/header.modules.css";
 
 const Main = ({ children }: any) => {
   const [show, setShow] = useState(false);
@@ -11,12 +11,12 @@ const Main = ({ children }: any) => {
   };
 
   return (
-    <>
+    <div className="dashboard">
       <Header show={show} showSideBar={showSideBar} />
       <Sidebar show={show} />
 
       <main className={`${show ? "header-padding" : "transit"}`}> {children} </main>
-    </>
+    </div>
   );
 };
 

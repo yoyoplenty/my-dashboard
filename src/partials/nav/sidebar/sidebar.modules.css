@@ -28,6 +28,47 @@
   left: 0;
 }
 
+.no-decoration {
+  text-decoration: none;
+}
+
+.sidebar-logo-name {
+  color: var(--first-color);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sidebar-nav-icon {
+  font-size: 1.25rem;
+  color: var(--purple-color);
+}
+
+.sidebar-nav-link {
+  position: relative;
+  color: var(--first-color-light);
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.sidebar-nav-link:hover {
+  color: var(--green-color);
+  background-color: var(--light-blue-color);
+  border-radius: 0.7rem;
+}
+
+.sidebar-nav-link.active {
+  color: var(--blue-color);
+  font-weight: 700;
+  background-color: var(--light-blue-color);
+  border-radius: 0.7rem;
+}
+
 /*
  * For screen above 768px
 */

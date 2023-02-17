@@ -1,7 +1,7 @@
 const User = () => {
   return (
-    <div className="pages">
-      <h1 className="text-dark">This is the user Index Page</h1>
+    <div className="pages p-3">
+      <h1 className="text-secondary">This is the user Index Page</h1>
     </div>
   );
 };
