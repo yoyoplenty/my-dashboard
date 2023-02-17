@@ -1,7 +1,9 @@
-import React from "react";
-
-const Index = () => {
-  return <div>Index</div>;
+const User = () => {
+  return (
+    <div className="pages">
+      <h1 className="text-dark">This is the user Index Page</h1>
+    </div>
+  );
 };
 
-export default Index;
+export default User;

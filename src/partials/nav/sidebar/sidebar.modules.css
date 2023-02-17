@@ -1,0 +1,44 @@
+/**
+ *This is mainly for mobile and below devices
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--body-color);
+  padding: 0.5rem 1rem 0 0;
+  transition: 1.5s;
+  z-index: var(--z-fixed);
+  -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.reveal {
+  left: 0;
+}
+
+/*
+ * For screen above 768px
+*/
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+
+  .reveal {
+    width: calc(var(--nav-width) + 9.75rem);
+  }
+}

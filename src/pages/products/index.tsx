@@ -1,7 +1,9 @@
-import React from "react";
-
-const Index = () => {
-  return <div>Index</div>;
+const Product = () => {
+  return (
+    <div>
+      <h1>This is the Product Page</h1>
+    </div>
+  );
 };
 
-export default Index;
+export default Product;

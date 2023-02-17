@@ -1,9 +1,9 @@
-import Nav from "./partials/nav/Nav";
+import Router from "./routes";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <div>
+      <Router />
     </div>
   );
 }
